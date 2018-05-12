@@ -4,7 +4,10 @@
 [[projects]]
   branch = "master"
   name = "github.com/agl/ed25519"
-  packages = [".","edwards25519"]
+  packages = [
+    ".",
+    "edwards25519"
+  ]
   revision = "5312a61534124124185d41f09206b9fef1d88403"
 
 [[projects]]
@@ -33,6 +36,18 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/cruftyoldsysadmin/bofhcoin-dcrd"
+  packages = [
+    "blockchain",
+    "chaincfg",
+    "chaincfg/chainhash",
+    "dcrutil",
+    "wire"
+  ]
+  revision = "f903c700a41a80f59daf21fa8489a437485dcfdb"
+
+[[projects]]
+  branch = "master"
   name = "github.com/davecgh/go-spew"
   packages = ["spew"]
   revision = "a476722483882dd40b8111f0eb64e1d7f43f56e4"
@@ -45,15 +60,32 @@
 
 [[projects]]
   branch = "master"
-  name = "github.com/cruftyoldsysadmin/base58"
+  name = "github.com/decred/base58"
   packages = ["."]
-  revision = "b3520e187fa8ebe65eb74245408cf4b83e6a65d3"
+  revision = "56c501706f00d9e1cfacee19a27117e12da24734"
 
 [[projects]]
-  branch = "master"
-  name = "github.com/cruftyoldsysadmin/bofhcoin-dcrd"
-  packages = ["blockchain","blockchain/internal/dbnamespace","blockchain/internal/progresslog","blockchain/stake","blockchain/stake/internal/dbnamespace","blockchain/stake/internal/ticketdb","blockchain/stake/internal/tickettreap","chaincfg","chaincfg/chainec","chaincfg/chainhash","database","dcrec/edwards","dcrec/secp256k1","dcrec/secp256k1/schnorr","dcrutil","txscript","wire"]
-  revision = "f903c700a41a80f59daf21fa8489a437485dcfdb"
+  name = "github.com/decred/dcrd"
+  packages = [
+    "blockchain/internal/dbnamespace",
+    "blockchain/internal/progresslog",
+    "blockchain/stake",
+    "blockchain/stake/internal/dbnamespace",
+    "blockchain/stake/internal/ticketdb",
+    "blockchain/stake/internal/tickettreap",
+    "chaincfg",
+    "chaincfg/chainec",
+    "chaincfg/chainhash",
+    "database",
+    "dcrec/edwards",
+    "dcrec/secp256k1",
+    "dcrec/secp256k1/schnorr",
+    "dcrutil",
+    "txscript",
+    "wire"
+  ]
+  revision = "fd99f572cfd52ca722ad501ccb34acdcb22b4a67"
+  version = "v1.2.0"
 
 [[projects]]
   name = "github.com/jrick/logrotate"
@@ -69,6 +101,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "ca865d509ef76e69617ba986312229371b896b2822a4aee9c5010c0c19149b7a"
+  inputs-digest = "6e5952f5a36cb72fb30ad55555231b4d05a88a168d4c4ea05ade18be5bd197b8"
   solver-name = "gps-cdcl"
   solver-version = 1
