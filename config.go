@@ -16,7 +16,7 @@ import (
 
 	"github.com/btcsuite/btclog"
 	"github.com/btcsuite/go-flags"
-	"github.com/decred/dcrd/dcrutil"
+	"github.com/cruftyoldsysadmin/bofhcoin-dcrd/dcrutil"
 )
 
 const (

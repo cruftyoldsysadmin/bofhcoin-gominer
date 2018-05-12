@@ -8,7 +8,7 @@ OpenCL devices.
 
 Linux and Windows 64-bit binaries may be downloaded from:
 
-[https://github.com/decred/decred-binaries/releases/latest](https://github.com/decred/decred-binaries/releases/latest)
+[https://github.com/cruftyoldsysadmin/bofhcoin-binaries/releases/latest](https://github.com/cruftyoldsysadmin/bofhcoin-binaries/releases/latest)
 
 ## Running
 
@@ -99,9 +99,9 @@ To download and build gominer, run:
 
 ```
 go get -u github.com/golang/dep/cmd/dep
-mkdir -p $GOPATH/src/github.com/decred
-cd $GOPATH/src/github.com/decred
-git clone  https://github.com/decred/gominer.git
+mkdir -p $GOPATH/src/github.com/bofhcoin
+cd $GOPATH/src/github.com/bofhcoin
+git clone  https://github.com/cruftyoldsysadmin/bofhcoin-gominer.git
 cd gominer
 dep ensure
 ```
@@ -137,13 +137,13 @@ go build -tags opencladl
 - Add `C:\Program Files\mingw-w64\x84_64-6.2.0-posix-seh-rt_v5-rev1\mingw64\bin` to your PATH (This is the latest release as of 2016-09-29)
 - `go get github.com/golang/dep/cmd/dep`
   * You should be able to type ```dep``` and get dep's usage display.  If not, double check the steps above
-- `go get github.com/decred/gominer`
+- `go get github.com/cruftyoldsysadmin/bofhcoin-gominer`
   * Compilation will most likely fail which can be safely ignored for now.
 - Change to the gominer directory
   * If using the Windows Command Prompt:
-  ```cd %GOPATH%/src/github.com/decred/gominer```
+  ```cd %GOPATH%/src/github.com/cruftyoldsysadmin/bofhcoin-gominer```
   * If using git-bash
-  ```cd $GOPATH/src/github.com/decred/gominer```
+  ```cd $GOPATH/src/github.com/cruftyoldsysadmin/bofhcoin-gominer```
 - Install dependencies via dep
   * ```dep ensure```
 
@@ -160,7 +160,7 @@ go build -tags opencladl
 
 ###### Steps
 - Using git-bash:
-  * ```cd $GOPATH/src/github.com/decred/gominer```
+  * ```cd $GOPATH/src/github.com/cruftyoldsysadmin/bofhcoin-gominer```
   * ```mingw32-make.exe```
 - Copy dependencies:
   * ```copy obj/decred.dll .```

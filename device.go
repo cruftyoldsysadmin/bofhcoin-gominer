@@ -8,13 +8,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/decred/dcrd/blockchain"
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/chaincfg/chainhash"
+	"github.com/cruftyoldsysadmin/bofhcoin-dcrd/blockchain"
+	"github.com/cruftyoldsysadmin/bofhcoin-dcrd/chaincfg"
+	"github.com/cruftyoldsysadmin/bofhcoin-dcrd/chaincfg/chainhash"
 
-	"github.com/decred/gominer/blake256"
-	"github.com/decred/gominer/util"
-	"github.com/decred/gominer/work"
+	"github.com/cruftyoldsysadmin/bofhcoin-gominer/blake256"
+	"github.com/cruftyoldsysadmin/bofhcoin-gominer/util"
+	"github.com/cruftyoldsysadmin/bofhcoin-gominer/work"
 )
 
 var chainParams = &chaincfg.MainNetParams

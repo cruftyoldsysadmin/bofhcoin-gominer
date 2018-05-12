@@ -25,12 +25,12 @@ import (
 
 	"github.com/btcsuite/go-socks/socks"
 
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/wire"
+	"github.com/cruftyoldsysadmin/bofhcoin-dcrd/chaincfg"
+	"github.com/cruftyoldsysadmin/bofhcoin-dcrd/chaincfg/chainhash"
+	"github.com/cruftyoldsysadmin/bofhcoin-dcrd/wire"
 
-	"github.com/decred/gominer/util"
-	"github.com/decred/gominer/work"
+	"github.com/cruftyoldsysadmin/bofhcoin-gominer/util"
+	"github.com/cruftyoldsysadmin/bofhcoin-gominer/work"
 )
 
 var chainParams = &chaincfg.MainNetParams
